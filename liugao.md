@@ -1,3 +1,59 @@
+Effective Date: November 2, 2026
+
+"Liu Gao" (留稿) is a Chrome extension designed to save and restore text entered into web pages locally. This policy explains what data the extension processes, how that data is used, how it is stored, and how it can be deleted.
+
+Data Processed
+
+Once a user provides explicit authorization and enables protection for a specific website, the extension processes plain text and historical versions of text entered into supported input fields, editable areas, and certain table cells. It also collects field identifiers, labels, and necessary information about editable areas to ensure text is restored to the correct location.
+
+Drafts are associated with the page URL, page title, and the time they were saved. While URLs are filtered to remove known sensitive parameters, it is not possible to guarantee the identification of sensitive parameters for every website.
+
+Saved text may contain personal information—such as names, email addresses, phone numbers, or draft communications—as well as other sensitive content, including health, financial, or location-related data. The extension cannot reliably identify and exclude all such information.
+
+The extension also stores website protection settings, records of user consent, rules for excluding specific input fields, and temporary information related to restoration operations.
+
+Purpose of Data Use
+
+The data described above is used exclusively for the following purposes: automatically saving web-based text, viewing drafts, restoring historical versions, matching text to the correct target fields, creating backups prior to restoration, and managing website authorization.
+
+"Liu Gao" does not use this data for advertising, user profiling, credit assessment, or any analysis unrelated to the protection of web-based text input.
+
+Storage and Sharing
+
+Draft content and historical versions are stored locally within the extension’s own IndexedDB database in your browser. Settings are stored using `chrome.storage.local`, while certain temporary operational data is stored using `chrome.storage.session`.
+
+The extension does not utilize a backend server to receive drafts, nor does it upload drafts to the developer. It does not use Chrome’s cloud synchronization feature, contains no telemetry or third-party analytics services, and does not sell user data.
+
+When a user performs a restoration, the selected text is inserted back into the target web page. The target website may subsequently read, process, or submit this text; such actions are governed by that website’s own privacy policy.
+
+Website Authorization and Sensitive Fields
+
+The extension only saves text from websites for which the user has provided consent and granted access permissions.
+
+Password fields are never saved, and the extension automatically skips fields identified as containing verification codes (CAPTCHAs), payment information, identification documents, or other sensitive data. This detection mechanism has limitations; please refrain from enabling protection on pages where you do not wish to keep local records. You may also use the "stop protection" feature for individual input fields.
+
+"Draft Saver" (留稿) does not provide a "data vault" function and does not offer additional application-layer encryption for local drafts.
+
+Retention and Deletion
+
+Drafts are not automatically deleted based on the passage of time. Each draft retains up to 5 full-page versions, with a maximum of 20 content revisions stored per individual field. The total storage capacity is capped at 25 MB. Older records exceeding the version limit will be overwritten; once the storage limit is reached, users must clear existing records to continue saving new data.
+
+Users can delete specific drafts or clear all drafts via the management page. Pausing protection or removing a website from the list does not automatically delete existing history. Uninstalling the extension will remove all of its local data. Users may also revoke a website's permissions through the Chrome extensions management interface.
+
+Policy Changes
+
+Should the extension’s data handling practices change, this policy and the disclosures provided on the Chrome Web Store will be updated accordingly.
+
+Contact
+
+For questions regarding privacy or data handling, please contact: japhetjiu699@gmail.com.
+
+"Draft Saver" complies with the Chrome Web Store User Data Policy regarding the use of user data, including the "Limited Use" requirements.
+
+
+** **
+
+
 生效日期：2026 年 11 月 2 日
 
 留稿是一款用于在本地保存和恢复网页输入文本的 Chrome 扩展。本政策说明扩展处理哪些数据，以及这些数据的用途、保存方式和删除方式。
